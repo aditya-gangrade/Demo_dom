@@ -1,0 +1,33 @@
+hello students
+
+quick copy or all elements copy of an array into another array. 
+
+spread opertor denoted by the three dots(...) operator
+
+var arr=[123,45,6,7,8,9,0,1];
+
+var arr2=[...arr];
+
+it is es6(ecmaScript6) concept
+
+destucturing:-  it is used to break or unpacking of the array and objects
+
+In array
+syntax:- const arr=[1,2,3,4,5,6,7,8,9,0,1,2,3,4];
+
+const [a,b]=arr;
+
+console.log("a",a);
+console.log("b",b);
+
+In object
+
+const students={
+      id:1,
+      name:"Student",
+      email:"xyz@gmail.com"
+}
+
+const {id,name,email}= students;
+
+console.log("students",id,name,email);

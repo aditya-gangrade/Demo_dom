@@ -1,0 +1,67 @@
+<html>
+  <head> </head>
+  <!-- <script>
+  
+   var time= setInterval(()=>{
+    const date = new Date();
+    console.log(date)
+    document.getElementById("header").innerHTML=date.toLocaleTimeString();
+      
+    },1000)
+   function clearTime(){
+     clearInterval(time)
+     console.log("heelo All")
+   }clearInterval(time)
+     console.log("heelo All")
+
+   setTimeout(()=>{
+    clearInterval(time)
+     console.log("heelo All")
+   },10000)
+  </script> -->
+
+  <script>
+    // function display(result) {
+    //   document.getElementById("header").innerHTML = "durgesh" + result;
+    // }
+
+    // function add(a, b, callback) {
+    //   // alert("do you want to display results?");
+    //   var text = window.confirm("Do you want to display results?");
+    //   console.log("tetxt", text);
+    //   if (text) {
+    //     var sum = a + b;
+    //     callback(sum);
+    //   } else {
+    //     document.getElementById("header").innerHTML = "You pressed cancel";
+       
+    //     setInterval(() => {
+    //       var date = new Date();
+    //       console.log("date",date)
+    //       document.getElementById("header").innerHTML = "universal"+ " " +date.toLocaleTimeString();
+    //     }, 1000);
+    //   }
+    // }
+  
+  const time=setInterval(()=>{
+    const date = new Date();
+    document.getElementById("header").innerHTML =date.toLocaleTimeString();
+  });
+
+  function Stop(){
+    const url=window.location.href;
+    const host=window.location.hostname;
+    console.log(url);
+    console.log(host);
+    clearInterval(time);
+  }
+
+  
+  </script>
+  <body>
+    <div id="main">
+      <h1 id="header">Time is</h1>
+      <button onclick="Stop()">Stop</button>
+    </div>
+  </body>
+</html>

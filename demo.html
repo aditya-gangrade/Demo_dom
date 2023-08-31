@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mainDiv"></div>
+    <button type="button" id="btn" onClick="added()">call me</button>
+  </body>
+  <script>
+    function added() {
+      console.log("clicked");
+    //   const para = document.createElement("p");
+      const paraText = document.createTextNode("durgesh");
+      paraText.appendChild(paraText);
+      document.getElementById("mainDiv").appendChild(paraText);
+    }
+  </script>
+</html>

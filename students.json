@@ -1,0 +1,22 @@
+{
+    "id":"1",
+    "name":"universal"
+}
+
+There are two json methods
+1. stringify():-it is convert js objects into json data(string data).
+   
+syntax:-  JSON.stringify(object_name);
+
+2. parse():-it is convert json data(string data) into js objects;
+
+syntax:- JSON.parse(object_name)
+
+
+
+
+    // function ajaxCall() {
+        //   fetch("https://jsonplaceholder.typicode.com/todos/1")
+        //     .then((response) => response.json())
+        //     .then((json) => console.log("data json",json.title))
+        // }
